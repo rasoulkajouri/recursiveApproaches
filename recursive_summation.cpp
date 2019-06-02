@@ -12,15 +12,14 @@
 #include <iostream>
 #include <vector>
 
-int sum_list (std::vector <int> list, int l){
+int sum_list (std::vector <int> &list, int l){
 
-	int dummy = list[l];
+	int dummy = list[list.size()-1];
 	list.pop_back();
 
-	if(l == 0)
-		return dummy;
+	if(list.size() == 0) return dummy;
 
-	return dummy + sum_list(list, l-1);
+	return dummy + sum_list(list);
 }
 
 int main(){
@@ -30,10 +29,9 @@ int main(){
 	int x;
 	std::vector<int> a;
 
-	while(std::cin >> x)
-		a.push_back(x);
+	while(std::cin >> x) a.push_back(x);
 
-	std::cout << " Sum of all elements are " << sum_list(a, a.size()-1) << " .\n";
+	std::cout << " Sum of all elements are " << sum_list(a) << " .\n";
 
 	return 0;
 }

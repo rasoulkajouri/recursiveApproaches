@@ -27,15 +27,13 @@ int main(){
 
 	std::cout << " Enter your numbers, at the end entry character \'n\'.\n";
 
-	int x, i=0;
+	int x;
 	std::vector<int> a;
 
-	while(std::cin >> x){
+	while(std::cin >> x)
 		a.push_back(x);
-		++i;
-	}
 
-	std::cout << " Sum of all elements are " << sum_list(a, i-1) << " .\n";
+	std::cout << " Sum of all elements are " << sum_list(a, a.size()-1) << " .\n";
 
 	return 0;
 }

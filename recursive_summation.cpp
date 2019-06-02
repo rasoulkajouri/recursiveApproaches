@@ -31,7 +31,8 @@ int main(){
 
 	while(std::cin >> x) a.push_back(x);
 
-	std::cout << " Sum of all elements are " << sum_list(a) << " .\n";
+	if(a.size() == 0) std::cout << " Sum of all elements are zero!\n";
+	else std::cout << " Sum of all elements are " << sum_list(a) << " .\n";
 
 	return 0;
 }

@@ -1,0 +1,13 @@
+
+The bisection method for finding the root of a function at given area.
+
+you have to add the bisection function into a main function and then you can use it.
+this function works with C++ standard libraries.
+
+"x1" is the beginning point and "x2" is the ending point of the given area.
+and "c" is the difference between x1 and x2; c = |x1 - x2|.
+Also, we control the answer's precision by using the d, 
+and we define this variable as the following.
+d = |func(x)|, where x is a variable and is found by x = (x1 + x2) * 0.5.
+
+# for more info. and collborating : rasoulkajouri [at] gmail [dot] com 

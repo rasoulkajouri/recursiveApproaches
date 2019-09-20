@@ -1,1 +1,5 @@
-the 
+the trapezoidal method is simplest method to calculate the integral of a function 
+at a given area.
+
+lower variable is the lowest point of the area and the upper variable is the upper point of the area.
+and the steps variable is the number of steps that you want.
